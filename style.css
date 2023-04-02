@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container {
+  border: 4px solid #323232;
+  display: grid;
+  height: 100vh;
+  grid-template-areas:
+    "header header"
+    "aside main"
+    "nav main"
+    "footer footer";
+  grid-template-columns: 1fr 1.5fr;
+  grid-template-rows: 0.3fr 1fr 1.5fr 0.2fr;
+  margin: 10px;
+  padding: 10px;
+}
+
+.header,
+.aside,
+.nav,
+.main,
+.footer {
+  color: azure;
+  font-size: 0.75em;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.header {
+  align-items: center;
+  background-color: darkorchid;
+  display: flex;
+  justify-content: center;
+  grid-area: header;
+}
+
+.aside {
+  align-items: center;
+  background-color: dodgerblue;
+  display: flex;
+  justify-content: center;
+  grid-area: aside;
+}
+
+.nav {
+  align-items: center;
+  background-color: crimson;
+  display: flex;
+  justify-content: center;
+  grid-area: nav;
+}
+
+.main {
+  align-items: center;
+  background-color: peru;
+  display: flex;
+  justify-content: center;
+  grid-area: main;
+}
+
+.footer {
+  align-items: center;
+  background-color: dimgrey;
+  display: flex;
+  justify-content: center;
+  grid-area: footer;
+}
